@@ -107,6 +107,40 @@
             line-height: 1;
             margin: 2px 0;
         }
+
+        /* Media Query for Small Screens */
+        @media (max-width: 768px) {
+            #content {
+                flex-direction: column;
+            }
+            #map {
+                flex: none;
+                height: 50vh;
+            }
+            .side-container {
+                flex: none;
+                border-left: none;
+                border-top: 1px solid #ddd;
+                padding: 5px;
+            }
+            .side-container img {
+                max-width: 70%;
+            }
+            .bottom-right {
+                position: static;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .bottom-right img {
+                max-width: 120px;
+            }
+            h1 {
+                font-size: 1.2em;
+            }
+            .header-logos img {
+                height: 30px;
+            }
+        }
         </style>
         <title>Remote Sensing Techniques to Assess Badlands Dynamics: A Systematic Review</title>
     </head>
