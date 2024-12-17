@@ -40,6 +40,7 @@
             background-color: #ffffff;
             border-left: 1px solid #ddd;
             align-items: center;
+            position: relative;
         }
         .side-container h3 {
             margin: 5px 0;
@@ -56,13 +57,23 @@
             height: 3px;
             background-color: #0077cc;
             margin: 10px 0;
-        }
-        .bottom-logo {
-            max-width: 100%;
-            height: auto;
-            margin-top: 10px;
             align-self: center;
-            transform: scale(1.5);
+        }
+        .bottom-right {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            text-align: right;
+        }
+        .bottom-right p {
+            font-size: 0.8em;
+            margin: 5px 0;
+            line-height: 1.2;
+        }
+        .bottom-right img {
+            max-width: 150px;
+            height: auto;
+            margin-top: 5px;
         }
         header {
             background-color: #ffffff;
@@ -121,8 +132,10 @@
                 <img src="images/Climate_class.png" alt="Köppen-Geiger climate classification">
                 <p>Reference: <a href="https://www.nature.com/articles/sdata2018214" target="_blank">https://www.nature.com/articles/sdata2018214</a></p>
                 <div class="divider"></div>
-                <p>This research was conducted within the RETURN Extended Partnership project and received funding from the European Union Next-GenerationEU (National Recovery and Resilience Plan—NRRP, Mission 4, Component 2, Investment 1.3—D.D. 1243 August 2, 2022, PE0000005).</p>
-                <img class="bottom-logo" src="images/logo-Return.png" alt="Return Logo">
+                <div class="bottom-right">
+                    <p>This research was conducted within the RETURN Extended Partnership project and received funding from the European Union Next-GenerationEU (National Recovery and Resilience Plan—NRRP, Mission 4, Component 2, Investment 1.3—D.D. 1243 August 2, 2022, PE0000005).</p>
+                    <img src="images/logo-Return.png" alt="Return Logo">
+                </div>
             </div>
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
