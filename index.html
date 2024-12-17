@@ -60,10 +60,7 @@
             align-self: center;
         }
         .bottom-right {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            text-align: right;
+            text-align: center;
         }
         .bottom-right p {
             font-size: 0.8em;
@@ -71,7 +68,7 @@
             line-height: 1.2;
         }
         .bottom-right img {
-            max-width: 150px;
+            max-width: 300px;
             height: auto;
             margin-top: 5px;
         }
@@ -95,7 +92,7 @@
             height: 50px;
         }
         h1 {
-            font-size: 1.5em;
+            font-size: 2.5em;
             margin: 3px 0;
             line-height: 1.1;
         }
@@ -106,40 +103,6 @@
         p.affiliations {
             line-height: 1;
             margin: 2px 0;
-        }
-
-        /* Media Query for Small Screens */
-        @media (max-width: 768px) {
-            #content {
-                flex-direction: column;
-            }
-            #map {
-                flex: none;
-                height: 50vh;
-            }
-            .side-container {
-                flex: none;
-                border-left: none;
-                border-top: 1px solid #ddd;
-                padding: 5px;
-            }
-            .side-container img {
-                max-width: 70%;
-            }
-            .bottom-right {
-                position: static;
-                text-align: center;
-                margin-top: 10px;
-            }
-            .bottom-right img {
-                max-width: 120px;
-            }
-            h1 {
-                font-size: 1.2em;
-            }
-            .header-logos img {
-                height: 30px;
-            }
         }
         </style>
         <title>Remote Sensing Techniques to Assess Badlands Dynamics: A Systematic Review</title>
@@ -165,6 +128,10 @@
                 <h3>Köppen-Geiger climate classification</h3>
                 <img src="images/Climate_class.png" alt="Köppen-Geiger climate classification">
                 <p>Reference: <a href="https://www.nature.com/articles/sdata2018214" target="_blank">https://www.nature.com/articles/sdata2018214</a></p>
+                <div class="divider"></div>
+                <p style="text-align: center; font-size: 0.9em; line-height: 1.3; margin: 10px 0;">
+                    This review provides a comprehensive overview of the advancements in remote sensing techniques applied to badlands, highlighting their respective contributions across varying environmental contexts. It synthesizes findings from 96 peer-reviewed studies identified through a systematic search in the Web of Science and Scopus databases, following the PRISMA methodology.
+                </p>
                 <div class="divider"></div>
                 <div class="bottom-right">
                     <p>This research was conducted within the RETURN Extended Partnership project and received funding from the European Union Next-GenerationEU (National Recovery and Resilience Plan—NRRP, Mission 4, Component 2, Investment 1.3—D.D. 1243 August 2, 2022, PE0000005).</p>
@@ -199,5 +166,6 @@
         </script>
     </body>
 </html>
+
 
 
